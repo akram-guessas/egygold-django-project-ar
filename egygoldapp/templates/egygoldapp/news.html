@@ -1,0 +1,131 @@
+{% extends 'egygoldapp/base.html' %}
+{% load static %}
+{% load post_tag %}
+{% block content%}
+<section>
+    <div class="container-fluid mt-3" >
+        <div id="google_center_div" class="mt-3 mb-4">
+            <div align="center" >
+                <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                <!-- Homepage Leaderboard -->
+                <ins class="adsbygoogle"
+                style="display:inline-block;width:750px;height:200px"
+                data-ad-client="ca-pub-1234567890123456"
+                data-ad-slot="1234567890"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+        <div class="row mr-5">
+            <div class="col-8" style="max-width: 100%;">
+                {% for post in posts %}
+                <div class="row">
+                    <div class="col-4 mt-6">
+                        {% if post.post_image %}
+                            <img src="{{post.post_image.url}}" alt="" style="max-width:100%; height:autu">
+                        {% else %}
+                            <div align="center">
+                                <h6 class="text-center border p-4"  style="font-size: 20px;
+                                font-weight:bold;background: rgb(238, 237, 237);max-width: 100%;"> 
+                                لا توجد صورة للمقالة </h6>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="col-8">                        
+                            <div class="post p-3 mb-3">
+                                <h3>
+                                    <img class="logo" src="{% static 'images/gold_logo.png' %}" alt="">
+                                    <a class="" style="color: rgb(73, 68, 68);" href="{% url 'detail' post.id %}">
+                                        {{post.title}}
+                                    </a>
+                                </h3>
+
+                                <h3 style="font-size: 14px;">
+                                    <span>نشر في </span>
+                                    <span> {{post.post_date|date:'d-m-Y'}} </span>
+                                </h3>
+                                <!--<span>نشر في {{post.post_date|date:'d-m-Y'}}</span>-->
+                                <p>
+                                    {% if post.content|length > 190 %}
+                                        {{post.content|safe|slice:190}} .. 
+                                    {% else %}
+                                        {{post.content|safe}} ..
+                                    {% endif %}
+                                </p>
+                                <div align="left">
+                                    <a href="{% url 'detail' post.id %}" class="btn btn-outline-warning text-dark ml-5"> 
+                                        أكمل القراءة <i class="fas fa-angle-double-left"></i></a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+                {% endfor %}
+                {% include 'egygoldapp/pagination.html' with page=posts %}
+            </div>
+            <div>
+                <div class="mb-3">
+                    
+                    {% latest_posts %}
+                </div>
+                <div class="mb-3">
+                    
+                    {% latest_comments %}
+
+                </div>
+                <div class="mt-4" id="google_image_div_fin">
+                    <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                        <!-- Homepage Leaderboard -->
+                        <ins class="adsbygoogle"
+                        style="display:inline-block;width:300px;height:250px"
+                        data-ad-client="ca-pub-1234567890123456"
+                        data-ad-slot="1234567890"></ins>
+                        <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <div class="w-100"></div>
+                <div class="mt-4" id="google_image_div_fin">
+                    <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                        <!-- Homepage Leaderboard -->
+                        <ins class="adsbygoogle"
+                        style="display:inline-block;width:300px;height:250px"
+                        data-ad-client="ca-pub-1234567890123456"
+                        data-ad-slot="1234567890"></ins>
+                        <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <br><br>
+                <div class="mt-4" id="google_image_div_fin">
+                    <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                        <!-- Homepage Leaderboard -->
+                        <ins class="adsbygoogle"
+                        style="display:inline-block;width:300px;height:250px"
+                        data-ad-client="ca-pub-1234567890123456"
+                        data-ad-slot="1234567890"></ins>
+                        <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div id="google_center_div" class="mt-4">
+            <div align="center" >
+                <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                <!-- Homepage Leaderboard -->
+                <ins class="adsbygoogle"
+                style="display:inline-block;width:780px;height:90px"
+                data-ad-client="ca-pub-1234567890123456"
+                data-ad-slot="1234567890"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+{% endblock content %}

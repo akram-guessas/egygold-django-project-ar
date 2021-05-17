@@ -1,0 +1,21 @@
+
+<div class="box mt-2">
+   <h2 class="text-center" style="font-size:20px; color: #fff;">آخر التعليقات</h2>
+    <ul>
+    {% for comment in l_comments %}
+    <li>
+        <span><i class="fas fa-blog"></i></span>
+        
+        <a href="{% url 'detail' comment.post.pk %}" class="text-dark">
+            {% if comment.title|length > 45 %}
+                {{comment.title|slice:55}} .. 
+            {% else %}
+                {{comment.title}}
+            {% endif %}
+            </a>
+    </li>
+    {% empty %}
+    <li>لايوجد تعليقات</li>
+    {% endfor %}
+</ul>
+</div>

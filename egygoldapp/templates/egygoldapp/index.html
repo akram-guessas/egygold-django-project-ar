@@ -1,0 +1,362 @@
+{% extends 'egygoldapp/base.html' %}
+{% load static %}
+{% block content %}
+<div id="header">
+  <div class="row">
+    <div class="col-8">
+      <h1 style="font-size: 18px;color: #E5B53A;">اسعار الذهب اليوم .. نظرة على اسعار الذهب اليوم في مصر والدول العربية</h1>
+      <p><strong>اسعار الذهب اليوم ..</strong>اسعار الذهب اليوم هي خدمة مجانية تحرص منصتنا على تقديمها للزائرين ليكونوا<b> 
+        مطلعين باستمرار ولحظيا على سعر الذهب اليوم في مصر وفي أغلب الدول العربية,
+        بناء على اسعار السوق العالمي، لذلك نقوم هنا بتحديث اسعار الذهب بشكل دوري على مدار الساعة,
+        ونهتم بتقديم تغطية لأهم الأخبار الاقتصادية المتعلقة
+          بالذهب في كافة الدول,
+          ويمكنكم متابعة سعر جرام الذهب بعياراته المتعددة أيضا.</b></p>
+      <p style="font-family: tahoma; font-size: 12px; font-weight: normal; margin-bottom: 5px;">
+        <a href="" title ="الصفحة الرئيسية لموقع ايجي جولد">{{posts6}}</a></p>
+    </div>
+    <div align='center' class="col-4">
+      <img src="{% static 'images/gold_logo.png'%}" alt="" width="220px" height="150px">
+    </div>
+  </div>
+ 
+</div>
+    <section>
+      <div class="container">
+        <div class="mt-4 mb-2" id="google_center_div mt-4">
+          <div align="center">
+            <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+            <!-- Homepage Leaderboard -->
+            <ins class="adsbygoogle"
+            style="display:inline-block;width:728px;height:90px"
+            data-ad-client="ca-pub-1234567890123456"
+            data-ad-slot="1234567890"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>
+        <div align="center">
+          <h3 class="main-h"><img src="{% static 'images/h3-icone.png' %}" alt="icone" class="logo"> متوسط اسعار الذهب اليوم بمحلات الصاغة فى مصر بدون مصنعية</h3>
+          
+          <table class="blueTable">
+            <thead>
+              <tr>
+                <th colspan="3" style="font-size: 20px;font-weight:bold;"><h5 style="font-size: 20px;font-weight:bold;">تاريخ اليوم: <span class="ml-5" style="color: #ffbb00 ;">{{date}}</span><i class="far fa-clock"></i> آخر تحديث <b style="color: #ffbb00; font-size: 24px !important;"> الآن</b> </h5>  </th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td colspan="3" >قد تختلف اسعار الذهب من محل صاغة لآخر</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              
+                <tr>
+                  {% for post in posts%}
+                  <th>{{post.td1}} <br> {{post.td2}}</th>
+                  {% endfor %}
+                </tr>
+                <tr>
+                  {% for post in posts1%}
+                  <th>{{post.td1}} <br> {{post.td2}}</th>
+                  {% endfor %}
+                </tr>
+                <tr>
+                  {% for post in posts2%}
+                  <th>{{post.td1}} <br> {{post.td2}}</th>
+                  {% endfor %}
+                </tr>
+              
+            </tbody>
+          </table>
+          <p class="mt-2" style="color: crimson; font-size: 22px;margin-top: 10px;font-weight: bold;">{{posts7}}</p>
+        </div>
+        <div align="center" class="row" style="margin-top: 20px;">
+           <div class="col-sm">
+            <div  align="center" id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+              <!-- Homepage Leaderboard -->
+              <ins class="adsbygoogle"
+              style="display:inline-block;width:300px;height:250px"
+              data-ad-client="ca-pub-1234567890123456"
+              data-ad-slot="1234567890"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div  align="center" id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+              <!-- Homepage Leaderboard -->
+              <ins class="adsbygoogle"
+              style="display:inline-block;width:300px;height:250px"
+              data-ad-client="ca-pub-1234567890123456"
+              data-ad-slot="1234567890"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+          </div>
+        </div>
+        <div align="center" class="row mb-5">
+          <div class="col-sm">
+            <h4 class="h4-table-2"><img src="{% static 'images/h3-icone.png' %}" alt="icone" class="logo"> متوسط اسعار الذهب اليوم بأسواق المال فى مصر بالجنيه المصري</h4>
+            <table class="blueTable">
+              <thead>
+                <tr>
+                  <th>الوحدة</th>
+                  <th>جنيه مصرى</th>
+                  <th>دولار أمريكى</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td colspan="4">{{posts4}}</td>
+                </tr>
+              </tfoot>
+              <tbody>
+                {% for post in posts3%}
+                <tr>
+                  <th>{{post.th}}</th>
+                  <td>{{post.td1}}</td>
+                  <td>{{post.td2}}</td>
+                </tr>
+                {% endfor %}
+                
+                </tbody>
+            
+              </table>
+          </div>
+          <div class="col-sm">
+            <h4 class="h4-table-2"><img src="{% static 'images/h3-icone.png' %}" alt="icone" class="logo"> متوسط سعر الذهب فى الأيام السابقة فى مصر بعملة جنيه مصرى</h4>
+            <table class="blueTable" style="max-height: 100%; height: 85%;">
+              <thead>
+                <tr>
+                  <th >اليوم</th>
+                  <th>عيار 24</th>
+                  <th>عيار 21</th>
+                  <th>عيار 18</th>
+                  <th>عيار 14</th>
+                  <th>عيار 12</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                {% for post in posts5 %}
+                <tr>
+                  <th>{{post.th}}</th>
+                  <td>{{post.td1}}</td>
+                  <td>{{post.td2}}</td>
+                  <td>{{post.td3}}</td>
+                  <td>{{post.td4}}</td>
+                  <td>{{post.td5}}</td>
+                </tr>
+                  {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        <p class="mt-2" style="color: crimson; font-size: 22px;margin-top: 10px;font-weight: bold;">{{posts7}}</p>
+      
+        <div id="google_center_div" >
+          <div align="center" >
+            <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+            <!-- Homepage Leaderboard -->
+            <ins class="adsbygoogle"
+            style="display:inline-block;width:728px;height:90px"
+            data-ad-client="ca-pub-1234567890123456"
+            data-ad-slot="1234567890"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>
+        
+        <div class="row mt-3">
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/download (1).png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'saudi' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في السعودية</b> </a>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/الكويت.png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'kuwait' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في الكويت</b> </a>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/الإمارات.png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'UAE' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في الامارات</b> </a>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/قطر.png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'qatar' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في  قطر</b> </a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/الأردن.png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'Jordan' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في الأردن</b> </a>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/البحرين.png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'bahrain' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في البحرين</b> </a>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/عمان.png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'Oman' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في عمان</b> </a>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/فلسطين.png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'Palestine' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في فلسطين</b> </a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mb-3">
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/العراق.png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'Iraq' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في العراق</b> </a>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/لبنان.png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'Lebanon' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في لبنان</b> </a>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/الجزائر.png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'algeria' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في الجزائر</b> </a>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div align="center" class="mt-2 mb-3" id="demo">
+              <img class="mb-3" src="{% static 'images/المغرب.png' %}" alt="" width="100px" height="50px" style="padding: 3px 0 0 8px;">
+              <br>
+              <a href="{% url 'morocco' %}" style="color: #007195!important;font-size: 18px; font-weight: bold;">
+                <b>اسعار الذهب اليوم في المغرب</b> </a>
+            </div>
+          </div>
+        </div>
+        <div id="google_center_div" >
+          <div align="center" >
+            <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+            <!-- Homepage Leaderboard -->
+            <ins class="adsbygoogle"
+            style="display:inline-block;width:728px;height:90px"
+            data-ad-client="ca-pub-1234567890123456"
+            data-ad-slot="1234567890"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div> 
+      </div>
+    
+    </section>
+
+    <div class="container-fluid mb-4">
+      <div class="row">
+        <div class="col-sm mt-4" >
+        <h3 class="title_section">رسم بياني متقدّم</h3>                                                  
+        <div class="advanced_chart">
+            <!-- TradingView Widget BEGIN -->
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                new TradingView.widget({
+                "width": '100%',
+                "height": 400,
+                "symbol": "FX_IDC:XAUUSD",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "White",
+                "style": "1",
+                "locale": "ar_AE",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "withdateranges": true,
+                "hide_side_toolbar": false,
+                "allow_symbol_change": true,
+                "hideideas": true,
+                "show_popup_button": true,
+                "popup_width": "1000",
+                "popup_height": "650"
+                
+                });
+                </script>
+                </div>
+                <!-- TradingView Widget END -->
+        </div>
+        
+        <div align="center" class="col-sm">
+            <div  align="center" id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+              <!-- Homepage Leaderboard -->
+              <ins class="adsbygoogle"
+              style="display:inline-block;width:300px;height:250px"
+              data-ad-client="ca-pub-1234567890123456"
+              data-ad-slot="1234567890"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <div class="m-2" align="center" id="google_image_div_fin" style="max-width: 100%; height: auto;">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+              <!-- Homepage Leaderboard -->
+              <ins class="adsbygoogle"
+              style="display:inline-block;width:300px;height:250px"
+              data-ad-client="ca-pub-1234567890123456"
+              data-ad-slot="1234567890"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+<style>
+  #header > h1{
+  font-size: 18px !important;
+  color: #E5B53A !important;
+}
+</style>
+{% endblock content %}

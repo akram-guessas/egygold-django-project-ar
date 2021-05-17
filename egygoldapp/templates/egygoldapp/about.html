@@ -1,0 +1,109 @@
+{% extends 'egygoldapp/base.html' %}
+{% load static %}
+{% block content%}
+<div class="container">
+    <div class="egygold-container">
+        <div class="egygold-content">
+          <div class="o-wrapper ">
+            <div class="content inside">
+              <div class="o-layout o-layout--flex">
+                  <div class="o-layout__item u-12@tiny">
+                  <div class="title_div">
+                      <br><br>
+                    <h1 style="font-size: 24px;line-height: 1.6rem;font-weight: bold;">أهلا وسهلا بكم في موقع "ايجي جولد دوت لايف"</h1>
+                    </div>
+                        <div class="c-card">
+                            <div class="c-card__body page">
+                                <p align="center"><img src="{% static 'images/logo.png' %}" width="280px" height="150px">
+                                </p>
+                                <br>
+                                <p>تهتم هذه المنصة بتقديم اسعار الذهب في مصر وأغلب الدول العربية بشكل محدث على مدار الساعة، وفق متغيرات ومستجدات الأسواق والبورصة العالمية، ويحرص فريق تحرير الموقع على تقديم تلك الخدمة لجمهور القراء من المحيط إلى الخليج بشكل لحظي ودوري، دون تأخير، حرصا على توفير المعلومة بالشكل الدقيق والموثق.</p>
+                                
+                                <p>تعتمد المنصة على آليات وتقنيات متابعة لحظية لضمان تقديم الخدمة على أفضل ما يكون لجمهورها من كل مكان وفي أي وقت، لذا يمكنك الاعتماد على منصتنا في متابعة اسعار الذهب وتحديثاتها بشكل لحظي ودائم، لتكون مرجعيتك الأولى على الدوام.</p>                                
+                                <br>
+                                <h3>مهمتنا:</h3>
+                                <br>
+                                <p>تمكين القراء من الاطلاع على اسعار الذهب في مصر والمنطقة العربية لحظة بلحظة.
+                                </p>
+                                <h3>رؤيتنا:</h3>
+                                <br>
+                                <p>نأمل أن نصبح المزود رقم واحد لتحديثات اسعار الذهب على مدار الساعة في مصر والمنطقة العربية.
+                                </p>
+                                <br>
+                                <h3>قيمنا:</h3>
+                                <br>
+                                <p>نسعى لتحرى الدقة في نقلنا لتطورات ومستجدات بورصة الذهب، حيث يعمل محررونا بكل شغف وأمانة على استقصاء الأسعار ومحاولة تقديم رؤية مستقبلية لاتجاهات السوق.</p>
+
+
+                            </div>
+                        </div>
+                    
+                    </div>
+  
+              </div><!--  END o-layout -->
+            </div>
+            <!--  END content -->
+          </div>
+          <!--  END o-wrapper -->
+        </div>
+      </div>
+</div>
+<style>
+    .o-layout--flex {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        min-width: 100%;
+    }
+    .o-layout__item {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0 15px;
+        margin-right: -4px;
+        vertical-align: top;
+        box-sizing: border-box;
+    }
+    .title_div {
+        max-width: 100%;
+        height: 100px;
+    }
+    h1 {
+    font-size: 24px;
+    line-height: 1.6rem;
+    font-weight: bold;
+    }
+
+    .o-layout__item {
+        display: inline-block;
+        font-size: 1rem;
+        vertical-align: top;
+        box-sizing: border-box;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        color: #222222;
+    }
+    .c-card__body{
+        padding: 20px;
+        background: #fff;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+</style>
+{% endblock content %}

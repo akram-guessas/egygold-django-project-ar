@@ -1,0 +1,453 @@
+* {
+  font-family: Arial !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+html , body{
+    direction: rtl;
+    text-align: right;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: 100%;
+}
+body {
+    background-repeat: repeat-x;
+    margin: auto;
+    color: #232323;
+    /*font-family: ‘Amiri’, serif;*/
+    font-size: 15px;
+    font-weight: bold;
+    text-align: justify;
+    background-color: #EAF1F9;
+
+}
+#container > div {
+  background-color: #FFF;
+  
+  float: right;
+  margin-bottom: 10px;
+  border: 1px #ccddf0 solid;
+}
+
+.logo {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    margin: -1px 0px 1px;
+    vertical-align: middle;
+    border: 0;
+    border-radius: 100px;
+}
+
+.navbar-brand {
+    color: #F0B310 !important;
+    max-width: 100%;
+    height: auto;
+    /*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;*/
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+.navbar {
+    max-width: 100%;
+    height: auto;
+    background: #232323 !important;
+    /*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;*/
+    font-size: 20px !important;
+    font-weight: bold;
+}
+.navbar a{
+  color: #FFF !important;
+}
+/*
+a {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+}*/
+.navbar-toggler {
+    background: #F0B310 !important;
+}
+
+#header {
+    max-width: 100%;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    display: block !important;
+    color: #FFF;
+    margin-top: 25px;
+    padding: 25px 20px 0 80px;
+    margin-bottom: 20px;
+    background-color: #28527a;
+
+    /*background-image: linear-gradient(to bottom right, gold , rgb(51, 139, 190));*/
+    /*background-image: url(https://content.gold-price-today.com/images/header.png);
+    background-repeat: no-repeat;*/
+}
+#header img {
+  max-width: 100%;
+  width: 220px;
+  height: 150px;
+}
+#header div div p a {
+  color: #FFF;
+}
+
+#header > p {
+  font-size: 14px;
+  display: block;
+  
+}
+
+#header > h1{
+  font-size: 18px !important;
+  color: #E5B53A !important;
+}
+
+#google_center_div {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    align-items: center;
+}
+
+#google_image_div_fin {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+#google_image_div {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;  
+    overflow: hidden;
+    position: relative;
+}
+table.blueTable {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    
+  }
+table.blueTable td, table.blueTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+table.blueTable tbody td, th {
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+table.blueTable tr:nth-child(even) {
+    background: #D0E4F5;
+  }
+table.blueTable thead {
+    background: #1C6EA4;
+    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    border-bottom: 2px solid #444444;
+  }
+table.blueTable thead th {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #D0E4F5;
+  }
+table.blueTable thead th:first-child {
+    border-left: none;
+  }
+  
+table.blueTable tfoot {
+    font-size: 18px;
+    font-weight: bold;
+    color: #232323;
+    background: black;
+    background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    border-top: 2px solid #444444;
+    
+    
+  }
+table.blueTable tfoot tr {
+    font-size: 20px;
+  }
+
+.main-h {
+    text-align: right;
+    color: #232323;
+    font-size: 22px;
+    font-weight: bold;
+    /*: Arial, "Helvetica Neue", Helvetica, sans-serif !important;*/
+    margin-right: 3px;
+}
+
+.h4-table-2 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    /*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;*/
+}
+
+
+
+#demo {
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  max-width: 80%;
+  height: 110px;
+  
+}
+
+.title_section {
+    font-weight: bold;
+    /*margin-left: 10px;*/
+    font-size: 20px;
+    /*color: #F0B310;*/
+    line-height: 1.1;
+    color: inherit;
+    float: right;
+    /*margin-right: 10px;*/
+    width: 94%;
+    margin-top: 0px;
+    margin-right: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width:1px;  
+    border-top-style:solid;
+    border-color: #b6b5b3;
+    /*border-top: medium solid #E5B53A;*/
+}
+.advanced_chart {
+    max-width: 100%;
+    height: auto;
+    width: 800px;
+    margin-right: 35px;
+    
+}
+.charts_by_link {
+    text-align: center;
+    margin-top: 50px;
+    /*margin-right: 150px;*/
+    font-size: 22px;
+    color: darkblue;
+    
+}
+.gotopbtn {
+  width: 30px;
+  height: 50px;
+  margin-right: 50px;
+  color: #F0B310; 
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 60px;
+  transition: all .4s;
+  
+
+}
+footer {
+    background-color: #232323;
+    font-size: 20px; 
+}
+
+.footer-row {
+    border-top: medium solid #E5B53A;
+    width: auto!important;
+}
+footer a {
+  color: #FFF !important;
+}
+
+.u-sheet-1,.u-sheet-2 {
+  background: #FFF;
+  max-width: 100%;
+  height: auto;
+}
+.u-sheet-1 {
+  width: 600px;
+}
+.u-sheet-2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 80%;
+
+}
+
+.h2-box {
+  font-size: medium;
+  color: #232323;
+  width: 234px;
+  background-color: #F0B310;
+  padding: 3px 10px 3px 10px;
+  border-bottom: 1px #ECECEC solid;
+  margin-top: 5px;
+  text-align: right;
+}
+img {
+  border: 0;
+}
+
+.a1_sup{
+  max-width: 100%;
+  height: auto;
+}
+
+.a1 {
+  direction: rtl;
+  text-align: right;
+  margin: 1rem;
+  border: 1px #ccddf0 solid;
+}
+.a1 h1, h2 {
+  color: #232323;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.a1 > div h1{
+  max-width: 100%;
+  height: auto;
+  font-size: 18px;
+  color: #232323;  
+  text-align: center;
+}
+.img_logo{
+  max-width: 100%;
+  width: 90px ;
+  height: 45px;
+  padding: 3px 0 0 8px;
+  margin-right: 3px;
+}
+.art_imag {
+  max-width: 100%;
+  width: 300px;
+  height: 165px;
+  border: 2px #F0B310 solid;
+}
+
+
+.a1 > h2{
+  max-width: 100%;
+  height: auto;
+  font-size:18px;
+  font-weight: 600;
+  color: #232323;
+  margin: 0.5rem;
+  margin-right: 18px;
+  
+}
+
+.a1 > p{
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444444;
+  margin-right: 18px;
+}
+
+.articl_text {
+  max-width: 100%;
+  height: auto;
+  font-size: 18px;
+  font-weight: 600;
+  background: #FFF;
+  color: #232323;
+  border: 1px #ccddf0 solid;
+}
+
+#container{
+  background-color: #FFF;
+  padding: 10px 12px 10px 12px;
+  float: right;
+  margin-bottom: 10px;
+  border: 1px #ccddf0 solid;
+}
+
+.box {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  background: #FFF;
+}
+.box h2 {
+  background: #232323;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.box h2 a {
+  color: #fff;
+  width: 100%;
+  height: auto;
+}
+.box ul {
+  position: relative;
+  background: #fff;
+
+}
+.box ul li {
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 5px 25px rgb(0, 0, 0,.1);
+  transition: all 1s ease-out;
+}
+.box ul li :hover{
+  width: 100%;
+  transition: all 0.5s ease-out;
+  z-index: 100;
+  background: #F0B310;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+  color: #fff;
+}
+.box ul li a {
+  width: 100%;
+  padding: 10px;
+ 
+}
+.box ul li span {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: #F0B310;
+  color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin: 3px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.box ul li a {
+  color: #232323;
+}
+
+.artc_img {
+  max-width: 100%;
+  height: 420px;
+}
+
+#artc_img {
+  width: 100%;
+  height: 90%;
+}
+
+.post {
+  border: 1px solid #CCC;
+  background-color: #FFF;
+}

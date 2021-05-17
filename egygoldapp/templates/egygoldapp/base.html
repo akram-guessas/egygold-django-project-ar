@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawssom-all.min.css' %}">
+    {% block head %}
+    {% endblock %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    {% if title %}
+    <title>ايجي غولد | {{title}}</title>
+    {% else %}
+    <title>ايجي غولد</title>
+    {% endif %}
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+            <a class="navbar-brand " href="{% url 'home' %}" style=" color: #F0B310 !important;"><img class="logo" src="{% static '/images/logo.png' %}" alt="شعار مدونة">
+                ايجي جولد</a></a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0 mr-sm-5" style="margin-right: 10px;">
+                    <input class="form-control mr-sm-2" type="search" placeholder="بحث" aria-label="Search">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" style="margin-right: 5px;">بحث</button>
+                </form>
+                <ul class="navbar-nav mr-sm-2" style="color: white;">
+                    <li class="nav-item">
+                      <a class="nav-link btn-outline-warning"  href="{% url 'news' %}">الأخبار</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn-outline-warning"  href="{% url 'goldpricestoday' %}">اسعار الذهب اليوم</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn-outline-warning" href="{% url 'gold-price-forecast' %}">توقعات اسعار الذهب</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link btn-outline-warning" href="{% url 'bitcoin-price-forecast' %}">توقعات سعر البيتكوين</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-warning" href="{% url 'dollar-price-today' %}">سعر الدولار اليوم</a>
+                      </li>
+                    <li class="nav-item mr-sm-5">
+                      <a class="nav-link" href=""><img src="{% static 'images/circular-arrow.png' %}" style="width: 30px; height: 30px;" alt="تحديث الصفحة"></a>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock content %}
+    <a href="" alt="صعود"><i class="fas fa-angle-double-up gotopbtn"></i></a>
+    <footer>
+      <div class="container-fluid">
+        <div class="row footer-row ">
+          <div class="col-sm">
+            <a class="navbar-brand" href=""  style="margin-right: 100px;"><img class="logo" src="{% static 'images/logo.png' %}" alt="">
+              ايجي جولد</a>
+          </div>
+          <div class="col-sm" >
+            <div class="row" style="margin-left: 80px; font-size: 22px !important; font-weight: bold !important;">
+              <div class="col-md mt-3">
+                <a class="btn-outline-warning" href="{% url 'about' %}" style="margin-right: 20px;  color: #F0B310 !important;" > من نحن </a>
+              </div>
+              <div  class="col-md mt-3">
+                <a class="btn-outline-warning" href="{% url 'privacy' %}"  style=" color: #F0B310 !important;">سياسة الخصوصية</a>
+              </div>
+              <div align="center" class="col-md mt-3">
+                <a class="btn-outline-warning" href="{% url 'contact_us' %}" style=" color: #F0B310 !important;">اتصل بنا</a>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div class="row p-2 mt-4">
+          <div class="col-md text-center">
+            <a href="" title="اسعار الذهب اليوم فى مصر">مصر</a>
+             - 
+             <a href="{% url 'kuwait' %}" title="اسعار الذهب اليوم في الكويت">الكويت</a>
+              - 
+              <a href="{% url 'saudi' %}" title="اسعار الذهب اليوم في السعودية">السعودية</a>
+               - 
+               <a href="{% url 'UAE' %}" title="اسعار الذهب اليوم في الامارات">الامارات</a>
+                - 
+                <a href="{% url 'qatar' %}" title="اسعار الذهب اليوم فى قطر">قطر</a>
+                 -                   - 
+                  <a href="{% url 'Jordan' %}" title="اسعار الذهب اليوم في الاردن">الاردن</a>
+                   - 
+                   <a href="{% url 'Iraq' %}" title="اسعار الذهب اليوم في العراق">العراق</a>
+                    - 
+                    <a href="{% url 'Lebanon' %}" title="اسعار الذهب اليوم في لبنان">لبنان</a>
+                     - 
+                     <a href="{% url 'Oman' %}" title="اسعار الذهب اليوم في عمان">عمان</a>
+                      - 
+                      <a href="{% url 'bahrain' %}" title="اسعار الذهب اليوم في البحرين">البحرين</a>
+                       - 
+                       <a href="{% url 'algeria' %}" title="اسعار الذهب اليوم في الجزائر">الجزائر</a>
+                        - 
+                        <a href="{% url 'morocco' %}" title="اسعار الذهب اليوم في المغرب">المغرب</a>
+                         -
+                          <a href="{% url 'Palestine' %}" title="اسعار الذهب اليوم في فلسطين">فلسطين</a>
+                        
+        </div>
+        </div>
+        <div class="row p-2 footer-row">
+          <div class="col-md text-center">
+            <small class="text-light"> جميع الحقوق محفوظة &copy;  ايجي جولد دوت لايف 2021</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/4e391d9e65.js"></script>
+    <script src="{% static 'js/fontawssom-all.min.js' %}"></script>
+
+
+</body>
+</html>

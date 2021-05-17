@@ -1,0 +1,244 @@
+{% extends 'egygoldapp/base.html' %}
+{% load static %}
+
+{% block content%}
+<div id="header">
+    <div class="row">
+      <div class="col-8">
+        <h1 style="font-size: 18px;color: #E5B53A;">اسعار الذهب اليوم .. نظرة على اسعار الذهب اليوم في مصر والدول العربية</h1>
+        <p><strong>اسعار الذهب اليوم ..</strong>اسعار الذهب اليوم هي خدمة مجانية تحرص منصتنا على تقديمها للزائرين ليكونوا<b> 
+          مطلعين باستمرار ولحظيا على سعر الذهب اليوم في مصر وفي أغلب الدول العربية,
+          بناء على اسعار السوق العالمي، لذلك نقوم هنا بتحديث اسعار الذهب بشكل دوري على مدار الساعة,
+          ونهتم بتقديم تغطية لأهم الأخبار الاقتصادية المتعلقة
+            بالذهب في كافة الدول,
+            ويمكنكم متابعة سعر جرام الذهب بعياراته المتعددة أيضا.</b></p>
+        <p style="font-family: tahoma; font-size: 12px; font-weight: normal; margin-bottom: 5px;">
+          <a href="" title ="الصفحة الرئيسية لموقع ايجي جولد">{{posts3}}</a></p>
+      </div>
+      <div align='center' class="col-4">
+        <img src="{% static 'images/gold_logo.png'%}" alt="" width="220px" height="150px">
+      </div>
+    </div>
+   
+</div>
+<section>
+    <div align="center" class="container">
+        <div id="google_center_div" class="mb-2">
+        <div align="center" >
+            <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+            <!-- Homepage Leaderboard -->
+            <ins class="adsbygoogle"
+            style="display:inline-block;width:728px;height:90px"
+            data-ad-client="ca-pub-1234567890123456"
+            data-ad-slot="1234567890"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        </div>
+        <div class="row" style="max-width: 100%;">
+            <div class="col-sm" style="background-color: #FFF;"> 
+                <div class="u-clearfix u-sheet u-sheet-1" style="direction: rtl;text-align: right; margin-right: 10px;">
+                    <h2>
+                    <img src="{% static 'images/h3-icone.png' %}" alt="icone" class="logo"> 
+                    <span style="font-size: 2.75rem; font-weight: 700;">سعر الذهب اليوم في  </span>
+                    <span style="text-decoration: underline !important;color: darkgreen;">قطر</span>
+                    </h2>
+                    <p style="font-size: 18px;font-weight: bold;">يقدم موقع ايجي جولد من خلال هذه الصفحة تقريرا دوريا ومتجددا بشأن اسعار الذهب اليوم في قطر بالريال القطري وأيضا الدولار الأمريكي.
+                        يستعرض التقرير أحدث اسعار الذهب اليوم في قطر بجميع عياراته (عيار 24, 22, 18, 14, 12) وذلك ضمن الخدمة المحدثة التي نقدمها على مدار الساعة.
+                        ويبرز التقرير في نفس الوقت المخطط الخاص بمعدل الارتفاع والانخفاض في اسعار الذهب اليوم في قطر وفي الأيام السابقة أيضا بالسوق القطري.
+                        ونحرص في موقع ايجي جولد على متابعة اسعار الذهب اليوم في قطر بشكل مستمر على مدار اليوم وذلك حسب توقيت الرياض.</p>
+                </div>
+            </div>
+            <div align="center" class="col-sm">
+                <div style="width: 300px; height: 180px; background: #FFF;">
+                    <h2 class="h2-box mb-2" >المؤشر العام لاسعار الذهب في قطر </h2>
+                    <p><img src="{{posts4}}" alt="مؤشر لاسعار الذهب اليوم في قطر" width="234">
+                    </p>
+                </div>
+                <p class="mt-2" style="color: crimson; font-size: 22px;margin-top: 10px;font-weight: bold;">{{posts5}}</p>
+
+            </div>
+        </div>
+        <div id="google_center_div" class="mt-3">
+            <div align="center" style="height:110px; ">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+              <!-- Homepage Leaderboard -->
+              <ins class="adsbygoogle"
+              style="display:inline-block;width:728px;height:90px"
+              data-ad-client="ca-pub-1234567890123456"
+              data-ad-slot="1234567890"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm mt-3">
+                <h3 class="main-h" style="font-size: 18px;"><img src="{% static 'images/h3-icone.png' %}" alt="icone" class="logo">  متوسط اسعار الذهب اليوم بأسواق المال في قطر بالريال القطري  </h3>
+                <table class="blueTable">
+                    <thead>
+                        <tr>
+                            <th>الوحدة</th>
+                            <th>ريال قطري</th>
+                            <th>دولار أمريكى</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"> {{posts2}} </td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        {% for post in posts%}
+                            <tr>
+                                <th>{{post.th}}</th>
+                                <td>{{post.td}}</td>
+                                <td>{{post.td1}}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <p class="mt-2" style="color: crimson; font-size: 22px;margin-top: 10px;font-weight: bold;">{{posts5}}</p>
+            </div>
+            <div class="col-sm">
+                <div  align="center" id="google_image_div_fin">
+                    <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                    <!-- Homepage Leaderboard -->
+                    <ins class="adsbygoogle"
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-1234567890123456"
+                    data-ad-slot="1234567890"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                  <div class="w-100"></div>
+                  <div  align="center" id="google_image_div_fin">
+                    <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                    <!-- Homepage Leaderboard -->
+                    <ins class="adsbygoogle"
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-1234567890123456"
+                    data-ad-slot="1234567890"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                 
+            </div>
+        </div>
+        <div class="mt-4" id="google_center_div">
+            <div align="center" style="height:110px; ">
+                <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                <!-- Homepage Leaderboard -->
+                <ins class="adsbygoogle"
+                style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-1234567890123456"
+                data-ad-slot="1234567890"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm mt-3">
+                <h3 class="main-h" style="font-size: 18px;"><img src="{% static 'images/h3-icone.png' %}" alt="icone" class="logo">   متوسط سعر الذهب في الأيام السابقة في  قطر بعملة ريال قطري </h3>
+                <table class="blueTable">
+                    <thead>
+                        <tr>
+                            <th>اليوم</th>
+                            <th>عيار 24</th>
+                            <th>عيار 21</th>
+                            <th>عيار 18</th>
+                            <th>عيار 14</th>
+                            <th>عيار 12</th>
+                        </tr>
+                    </thead>
+                    </thead>
+                    <tbody>
+                        {% for post in posts1%}
+                            <tr>
+                                <th>{{post.th}}</th>
+                                <td>{{post.td}}</td>
+                                <td>{{post.td1}}</td>
+                                <td>{{post.td2}}</td>
+                                <td>{{post.td3}}</td>
+                                <td>{{post.td4}}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <p class="mt-2" style="color: crimson; font-size: 22px;margin-top: 10px;font-weight: bold;">{{posts5}}</p>
+            </div>
+            <div class="col-sm" >
+                <div  align="center" id="google_image_div_fin">
+                    <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                    <!-- Homepage Leaderboard -->
+                    <ins class="adsbygoogle"
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-1234567890123456"
+                    data-ad-slot="1234567890"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-sm" >
+                    <div  align="center" id="google_image_div_fin">
+                        <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                        <!-- Homepage Leaderboard -->
+                        <ins class="adsbygoogle"
+                        style="display:inline-block;width:300px;height:250px"
+                        data-ad-client="ca-pub-1234567890123456"
+                        data-ad-slot="1234567890"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+        <div class="mt-4" id="google_center_div">
+            <div align="center" style="height:110px; ">
+                <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                <!-- Homepage Leaderboard -->
+                <ins class="adsbygoogle"
+                style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-1234567890123456"
+                data-ad-slot="1234567890"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+        <div class="container u-sheet-2">
+            <p>اسعار الذهب اليوم في قطر .. تابعوا منصة ايجي جولد على مدار اليوم للاطلاع على كل تحديثات الاسعار لحظة بلحظة، حيث تعد تلك التحديثات معلومات اقتصادية غاية في الأهمية بالنسبة للأشخاص المقبلين علي الزواج في قطر، فضلا عن اسعار الذهب اليوم في قطر بصفة عامة تهم المستثمرين في قطر نتيجة لكون الذهب من المعادن التي ترتبط أساسا بالاقتصاد العالمي وفي الوقت الذي تدهورت فيه اقتصاديات كثير من البلدان،
+             بقي الذهب باعتباره ملاذ آمن للكثيرين سواء في قطر او في باقي الدول العربية
+            </p>
+            
+        </div>  
+        <div id="google_center_div" class="mt-3">
+            <div align="center" >
+                
+                <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                <!-- Homepage Leaderboard -->
+                <ins class="adsbygoogle"
+                style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-1234567890123456"
+                data-ad-slot="1234567890"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>   
+        
+    </div>
+</section>
+<style>
+    .row{
+        width: 90%;
+    }
+</style>
+{% endblock content %}

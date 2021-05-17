@@ -1,0 +1,711 @@
+{% extends 'egygoldapp/base.html' %}
+{% load static %}
+{% block content%}
+<div id="header">
+    <div class="row">
+      <div class="col-8">
+        <h1 style="font-size: 18px;color: #E5B53A;">اسعار الذهب اليوم .. نظرة على اسعار الذهب اليوم في مصر والدول العربية</h1>
+        <p><strong>اسعار الذهب اليوم ..</strong>اسعار الذهب اليوم هي خدمة مجانية تحرص منصتنا على تقديمها للزائرين ليكونوا<b> 
+          مطلعين باستمرار ولحظيا على سعر الذهب اليوم في مصر وفي أغلب الدول العربية,
+          بناء على اسعار السوق العالمي، لذلك نقوم هنا بتحديث اسعار الذهب بشكل دوري على مدار الساعة,
+          ونهتم بتقديم تغطية لأهم الأخبار الاقتصادية المتعلقة
+            بالذهب في كافة الدول,
+            ويمكنكم متابعة سعر جرام الذهب بعياراته المتعددة أيضا.</b></p>
+        <p style="font-family: tahoma; font-size: 12px; font-weight: normal; margin-bottom: 5px;">
+          <a href="" title ="الصفحة الرئيسية لموقع ايجي جولد">{{titles}}</a></p>
+          <p style="color: crimson; font-size: 22px;margin-top: 10px;font-weight: bold;">{{post}}</p>
+
+      </div>
+      <div align='center' class="col-4">
+        <img src="{% static 'images/gold_logo.png'%}" alt="">
+      </div>
+    </div>
+</div>
+<section>
+    <div class="container-fluid mt-3">
+      <div id="google_center_div" class="mt-3">
+        <div align="center" >
+            <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+            <!-- Homepage Leaderboard -->
+            <ins class="adsbygoogle"
+            style="display:inline-block;width:728px;height:90px"
+            data-ad-client="ca-pub-1234567890123456"
+            data-ad-slot="1234567890"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+      </div>
+      <div class="row" style="margin-right: 50px;max-width: 100%;height: auto;">
+          <div class="col-8">
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/egyp.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <h1><img class="img_logo" src="{% static 'images/egy.png' %}" alt="">
+                      اسعار الذهب اليوم في مصر <span> {{date}} </span>(محدث مباشر)
+                           
+                          
+                    </h1>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من مصر وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق 
+                        ( <span > {{date1}} </span> )
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+                
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/السعودية-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2><img class="img_logo" src="{% static 'images/download (1).png' %}" alt="">    
+                          اسعار الذهب اليوم في السعودية <span> {{date}} </span>(محدث مباشر)                  
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من السعودية وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date1}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_saudi">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            
+            <div id="google_center_div" class="mt-3">
+              <div align="center" >
+                  <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:728px;height:90px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/الكويت-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2><img class="img_logo" src="{% static 'images/الكويت.png' %}" alt="">   
+                          اسعار الذهب اليوم في الكويت <span> {{date}} </span>(محدث مباشر)                 
+                            
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من الكويت وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date1}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_kuwait">
+                      <button class="btn btn-outline-warning text-dark">
+                        أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/الامارات-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2><img class="img_logo" src="{% static 'images/الإمارات.png' %}" alt="">   
+                          اسعار الذهب اليوم في الإمارات <span> {{date}} </span>(محدث مباشر)                   
+                            
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من الإمارات وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date1}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_uae">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>  
+           
+            <div id="google_center_div" class="mt-3">
+              <div align="center" >
+                  <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:728px;height:90px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/قطر-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2><img class="img_logo" src="{% static 'images/قطر.png' %}" alt="">    
+                          اسعار الذهب اليوم في قطر <span> {{date}} </span>(محدث مباشر)                   
+                            
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من قطر وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date1}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_qatar">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/الأردن-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2><img class="img_logo" src="{% static 'images/الأردن.png' %}" alt="">    
+                          اسعار الذهب اليوم في الأردن <span> {{date}} </span>(محدث مباشر)                    
+                            
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من الأردن وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_jordan">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>  
+
+            <div id="google_center_div" class="mt-3">
+              <div align="center" >
+                  <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:728px;height:90px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/البحرين-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2><img class="img_logo" src="{% static 'images/البحرين.png' %}" alt="">    
+                          اسعار الذهب اليوم في البحرين <span> {{date}} </span>(محدث مباشر)                   
+                            
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من البحرين وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date1}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_bahrain">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/عمان-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2><img class="img_logo" src="{% static 'images/عمان.png' %}" alt="">    
+                          اسعار الذهب اليوم في عمان <span>  {{date}} </span>(محدث مباشر)                  
+                            
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من عمان وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date1}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_oman">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            
+            <div id="google_center_div" class="mt-3">
+              <div align="center" >
+                  <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:728px;height:90px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/فلسطين-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2><img class="img_logo" src="{% static 'images/فلسطين.png' %}" alt="">    
+                          اسعار الذهب اليوم في فلسطين <span> {{date}} </span>(محدث مباشر)                   
+                            
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من فلسطين وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date1}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_palestine">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/العراق-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2><img class="img_logo" src="{% static 'images/العراق.png' %}" alt="">   
+                          اسعار الذهب اليوم في العراق <span> {{date}} </span>(محدث مباشر)                   
+                            
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من العراق وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date1}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_iraq">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          
+            <div id="google_center_div" class="mt-3">
+              <div align="center" >
+                  <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width: 400px;height: 240px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/لبنان-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2><img class="img_logo" src="{% static 'images/لبنان.png' %}" alt="">    
+                          اسعار الذهب اليوم في لبنان <span> {{date}} </span>(محدث مباشر)                   
+                            
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من لبنان وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date1}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_lebanaon">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/الجزائر-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2><img class="img_logo" src="{% static 'images/الجزائر.png' %}" alt="">    
+                          اسعار الذهب اليوم في الجزائر <span> {{date}} </span>(محدث مباشر)                  
+                            
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من الجزائر وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date1}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_algeria">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div id="google_center_div" class="mt-3">
+              <div align="center" >
+                  <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width: 400px;height: 240px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 mt-3">
+                <img class="art_imag" src="{% static 'images/المغرب-1.png' %}" alt="">
+              </div>
+              <div class="col-8">
+                <div class="a1_sup">
+                  <div class="bg-light a1"> 
+                    <div class="row">
+                      <div class="col">
+                        <h2>
+                          <img class="img_logo" src="{% static 'images/المغرب.png' %}" alt="">    
+                          اسعار الذهب اليوم في المغرب <span> {{date}} </span>(محدث مباشر)                    
+                            
+                        </h2>
+                      </div>
+                    </div>
+                    <p>يقدم موقع
+                        "ايجي جولد دوت لايف" خدمة حصرية لزواره من المغرب وخارجها على مدار الساعة 
+                        عن اسعار الذهب اليوم وفقا لأخر التحديثات أولا بأول.
+                        ونبرز اسعار الذهب اليوم الموافق (<span> {{date1}} </span>)
+                        طبقا لتحديثات الأسعار بشكل مباشر ما بين ارتفاع وانخفاض...
+                    </p>
+                  </div>
+                  <div align="left" style="width: 80%;">
+                    <form action="article_marocco">
+                      <button class="btn btn-outline-warning text-dark">
+                      أكمل القراءة <i class="fas fa-angle-double-left"></i></button>
+                  </form>
+                  </div>
+                </div>    
+              </div>
+            </div> 
+          </div>
+          <div class="col-4 mt-3">
+            <div class="box">
+              <h2><a href="{% url 'home' %}">اسعار الذهب اليوم في الدول العربية</a></h2>
+              <ul>
+                <li><span>1</span><a href="{% url 'home' %}" title="سعر الذهب اليوم فى مصر بالجنيه المصري">اسعار الذهب اليوم فى مصر</a></li>
+                <li><span>2</span><a href="{% url 'saudi' %}" title="سعر الذهب اليوم فى مصر بالريال السعودي">اسعار الذهب اليوم فى السعودية</a></li>
+                <li><span>3</span><a href="{% url 'kuwait' %}" title="سعر الذهب اليوم فى مصر بالدينار الكويتي">اسعار الذهب اليوم فى الكويت</a></li>
+                <li><span>4</span><a href="{% url 'UAE' %}" title="سعر الذهب اليوم فى مصر بالدرهم الإماراتي">اسعار الذهب اليوم فى الإمارات</a></li>
+                <li><span>5</span><a href="{% url 'qatar' %}" title="سعر الذهب اليوم فى مصر بالريال القطري">اسعار الذهب اليوم فى قطر</a></li>
+                <li><span>6</span><a href="{% url 'Jordan' %}" title="سعر الذهب اليوم فى مصر بالدينار الأردني">اسعار الذهب اليوم فى الأردن</a></li>
+                <li><span>7</span><a href="{% url 'bahrain' %}" title="سعر الذهب اليوم فى مصر بالدينار البحريني">اسعار الذهب اليوم فى البحرين</a></li>
+                <li><span>8</span><a href="{% url 'Oman' %}" title="سعر الذهب اليوم فى مصر بالريال العماني">اسعار الذهب اليوم فى عمان</a></li>
+                <li><span>9</span><a href="{% url 'Palestine' %}" title="سعر الذهب اليوم فى مصر بالشيكل الفلسطيني">اسعار الذهب اليوم فى فلسطين</a></li>
+                <li><span>10</span><a href="{% url 'Iraq' %}" title="سعر الذهب اليوم فى مصر بالدينار العراقي">اسعار الذهب اليوم فى العراق</a></li>
+                <li><span>11</span><a href="{% url 'Lebanon' %}" title="سعر الذهب اليوم فى مصر بالليرة اللبناني">اسعار الذهب اليوم فى لبنان</a></li>
+                <li><span>12</span><a href="{% url 'algeria' %}" title="سعر الذهب اليوم فى مصر بالدينار الجزائري">اسعار الذهب اليوم فى الجزائر</a></li>
+                <li><span>13</span><a href="{% url 'morocco' %}" title="سعر الذهب اليوم فى مصر بالدرهم المغربي">اسعار الذهب اليوم فى المغرب</a></li>
+    
+              </ul>
+            </div>
+            <div class="w-100"></div>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <br><br>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <br><br>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <br><br>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <br><br>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <br><br>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <br><br>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <br><br>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <br><br>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <br><br>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <br><br>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <br><br>
+            <div id="google_image_div_fin">
+              <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                  <!-- Homepage Leaderboard -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-1234567890123456"
+                  data-ad-slot="1234567890"></ins>
+                  <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            
+          </div>
+      </div>
+      <div id="google_center_div">
+        <div align="center" >
+            <script asyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+            <!-- Homepage Leaderboard -->
+            <ins class="adsbygoogle"
+            style="display:inline-block;width: 728px;height: 90px"
+            data-ad-client="ca-pub-1234567890123456"
+            data-ad-slot="1234567890"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+{% endblock content %}

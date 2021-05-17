@@ -1,0 +1,137 @@
+{% extends 'egygoldapp/base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/hamburgers.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/select2.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/util.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/maincontact.css'%}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="alert text-center alert-success m-5" role="alert">
+        <h3>تم ارسال رسالتك بنجاح</h3>
+    </div>
+    <div class="container-contact1 mt-5" style="max-width: 100%; height:auto;">
+        <div class="contact1-pic js-tilt" data-tilt>
+            <img src="{% static 'images/img-01.png' %}" alt="IMG">
+        </div>
+
+        <form method="POST" class="contact1-form validate-form">
+            <span class="contact1-form-title">
+                ابقى على تواصل معنا 
+            </span>
+            {% csrf_token %}
+            <div class="wrap-input1 validate-input" data-validate = "Name is required">
+                <input class="input1" type="text" name="name" placeholder="الاسم" required>
+                <span class="shadow-input1"></span>
+            </div>
+
+            <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <input class="input1" type="email" name="email" placeholder="البريد الالكتروني" required>
+                <span class="shadow-input1"></span>
+            </div>
+
+            <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+                <input class="input1" type="text" name="subject" placeholder="الموضوع" required>
+                <span class="shadow-input1"></span>
+            </div>
+
+            <div class="wrap-input1 validate-input" data-validate = "Message is required">
+                <textarea class="input1" name="message" placeholder="الرسالة" required></textarea>
+                <span class="shadow-input1"></span>
+            </div>
+
+            <div class="container-contact1-form-btn">
+                <button class="contact1-form-btn">
+                    <span>
+                        ارسل الرسالة
+                        <i class="fas fa-long-arrow-alt-left"></i>
+                    </span>
+                </button>
+            </div>
+        </form>
+       
+    </div>
+</div>
+
+<!--===============================================================================================-->
+<script src="{% static 'js/select2.min.js' %}"></script>
+<script src="{% static 'js/tilt.jquery.min.js'%}"></script>
+
+<script >
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<!--===============================================================================================-->
+<script src="{% static 'js/maincontact_us.js'%}"></script>
+<style>
+    body {
+        background: #F0B310;
+        background: -webkit-linear-gradient(left, #e2a705, #fccd4b);
+        background: -o-linear-gradient(left, #e9b015, #ffd000);
+        background: -moz-linear-gradient(left, #fdba00, #f8e641);
+        background: linear-gradient(left, #ffbb00, #ffe608);
+    }
+    .contact1 {
+        background: #FFF;
+    }
+    .navbar-brand {
+    color: #F0B310 !important;
+    max-width: 100%;
+    height: auto;
+    /*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;*/
+    font-size: 24px !important;
+    font-weight: bold;
+    }
+
+    .navbar {
+        max-width: 100%;
+        height: auto;
+        background: #232323 !important;
+        /*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;*/
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+    .navbar a{
+    color: #FFF !important;
+    font-size: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    /*
+    a {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+    }*/
+    .navbar-toggler {
+        background: #F0B310 !important;
+    }
+    footer {
+    background-color: #232323;
+    font-size: 20px; 
+    }
+
+    .footer-row {
+        border-top: medium solid #E5B53A;
+        width: auto!important;
+    }
+    footer a {
+    color: #FFF !important;
+    font-size: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+
+</style>
+{% endblock content %}

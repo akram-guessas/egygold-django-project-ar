@@ -1,0 +1,18 @@
+
+<div class="box mt-2">
+    <h2 class="text-center" style="font-size:20px; color: #fff;">آخر الأخبار</h2>
+    <ul>
+    {% for post in l_posts %}
+    <li>
+        <span><i class="fas fa-blog"></i></span>
+        <a href="{% url 'detail' post.id %}" class="text-dark">
+            {% if post.title|length > 45 %}
+                {{post.title|slice:55}} .. 
+            {% else %}
+                {{post.title}}
+            {% endif %}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+</div>

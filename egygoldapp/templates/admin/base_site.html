@@ -1,0 +1,114 @@
+{% extends "admin/base.html" %}
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+{% block extrastyle %}
+    <style>
+        body {
+            color: #000;
+        }
+        h1 {
+            color: #090909;
+        }
+        :root {
+            --body-bg: #f9f9f9;
+            --darkened-bg: #fff;
+        }
+        a:link, a:visited {
+        color: #232323;
+        }
+        a.section:link, a.section:visited {
+        color: #FFFF;
+        }
+        #content-related .module h2 {
+            background: #264b5d;
+        }
+        #content-related h3 {
+        color: #000;
+        }
+        .quiet, a.quiet:link, a.quiet:visited {
+        color: #f00;
+        }
+        #content-related .module {
+        background: #fff;
+        border: 1px #264b5d solid;
+        }
+        
+        input[type="text"], input[type="password"],input[type="email"], input[type="url"], input[type="number"], input[type="tel"],textarea, select, .vTextField {
+            color: #000;
+        }
+        #changelist .changelist-form-container #changelist-form .actions{
+        color: #000;
+        }
+        #changelist .changelist-form-container #changelist-form .actions select {
+            color: #f00;
+        }
+        .object-tools a.addlink {
+        background-color: #264b5d;
+        }
+        thead th {
+            background: #264b5d;
+        }
+        #changelist .changelist-form-container #changelist-form .paginator {
+            background: #264b5d;
+
+        }
+        #nav-sidebar .current-model {
+        background: #fff;
+        }
+        #content-main #comment_form div fieldset label  {
+        color: #000;
+        }
+        .toggle-nav-sidebar { 
+            color: #000;
+        }
+        #content-main #post_form div fieldset label {
+            color: #000;
+        }
+        #content-main #post_form div fieldset p.file-upload { 
+            color: #000;
+        }
+        
+        #user_form label.required,#user_form .help {
+        font-weight: bold;
+        color: #000;
+        }
+        label {
+        font-weight: normal;
+        color: #000 !important;
+        font-size: 13px;
+        }
+        .selector .selector-available h2 {
+        background: #264b5d !important;
+        color: #fff !important;
+        }
+        .selector-chosen h2 {
+            color: #fff !important;
+        }
+        a.selector-chooseall, a.selector-clearall {
+            color: #000 !important;
+        }
+        p.datetime {
+            color: #000 !important;
+        }
+        .datetime span {
+            color: #000 !important;
+        }
+        #changelist-filter h3 {
+            color: #000 !important;
+        }
+        #changelist-filter ul li a{
+            color: #000 !important;
+        }
+        div.help li {
+        color: #000 !important;
+        }
+
+
+        
+    </style>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">EgyGold administration</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
